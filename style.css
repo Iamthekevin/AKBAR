@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.extraspace{
+    height: 200px;
+   
+}
+body{
+    height: 100vh;
+}
+
+/* css for the header */
+*{ 
+    margin: 0;
+    padding: 0;
+}
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main{
+    background-color: rgb(2, 2, 30);
+    height: 500px;
+    overflow: hidden;
+}
+.righticons{
+    display: flex;
+    font-size: 15px;
+    height: 20px;
+    justify-content: flex-end;
+    /* padding-right: 20px;
+     
+    /* margin-top: -50px;
+     */ 
+    text-transform: uppercase;
+}
+.akbarbiz{
+    border: 2px solid rgb(100, 85, 85);
+    color: white;
+    border-radius: 2px;
+    padding-right: 5px;
+    border: 1px solid greenyellow;
+    /* margin-right: 15px; */
+    cursor:pointer;
+    margin-right: 10px;
+}
+.irtc-agent{
+    padding-right: 14px;
+    border: 1px solid greenyellow;
+    color: white;
+    border-radius: 2px;
+    /* margin-right: 15px; */
+    border: 1px solid greenyellow;
+     cursor: pointer;
+     margin-right: 10px;
+}
+.login{
+    color: white;
+    border-radius: 2px;
+    border: 1px solid greenyellow;
+    padding-right: 5px;
+    cursor: pointer;
+    
+}
+.akbarbiz:hover{
+    color: red;
+    background-color: yellow;
+}
+.irtc-agent:hover{
+    color: red;
+    background-color: yellow;
+}
+
+.login:hover{
+    color: red;
+    background-color:yellow;
+}
+.fa-jet-fighter,.fa-hotel,.fa-cc-visa,.fa-champagne-glasses,.fa-bus,.fa-ship{
+    color: white;
+    font-size: 50px;
+    margin-right: 20px;
+    cursor:pointer;
+
+    height: 50px;
+}
+
+.allboxesnav{
+    display: flex;
+    flex-direction: wrap;
+    justify-content:center;
+    margin-top: 60px;
+    margin-left: 25px;
+}
+.lbl{
+    color: white;
+    padding-right: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+#cardcontainer{
+    display: flex;
+    justify-content: center;
+    max-height: 250px;
+    
+     overflow-y: hidden;
+    overflow-x: auto;
+}
+#cardcontainer::-webkit-scrollbar{
+    width: 0;
+   
+   }
+   #cardcontainer img:hover{
+       transform:scaleX(1.1);
+
+   }
+   #cardcontainer img{
+       margin-left: 52px;
+   }
+   .fa-map-location-dot{
+       font-size: 20px;
+   }
+   .fa-calendar-days{
+       font-size: 30px;
+   }
+   .bigfinalflex{
+       display: flex;
+       justify-content: space-evenly;
+       
+   }
+   .guest-num{
+       font-weight: bolder;
+   }
+   .number,.firstdate,.date:hover{
+       cursor:pointer;
+   }
+   
+   .price:hover{
+       background-color: black;
+       color: white;
+    }
+    .cardimage:hover{
+        border-radius: 50px;
+    }
+    .additionalsize{
+        font-size: 14px;
+        margin-top: -16px;
+    }
+    /* let make the scroll to the imagecard */
+    .bigfirstcard{
+        max-height: 500px;
+        overflow:scroll;
+        overflow-x: hidden;
+    }
+    .bigfirstcard::-webkit-scrollbar{
+        width: 10px;
+    }
+    .bigfirstcard::-webkit-scrollbar-track{
+        border-radius: 10px;
+        background: linear-gradient(to bottom, #33ccff 0%, #9900ff 100%);
+       
+    }
+    .bigfirstcard::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color:rgb(255, 12, 223);
+    }
+    .destlocation{
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+   /* lets add the css for the searching */
+   /* add the media queryies in the page */
+   @media (min-width: 320px) and (max-width: 768px) { 
+    .extraspace{
+      height:100px ;
+    }
+       .nav-main{
+           margin-top: 10px;
+       }
+    .righticons{
+        font-size: 11.5px;
+        font-weight: bold;
+        margin-left: 20px;
+        border-right: 2px solid black;
+    }
+    .fa-jet-fighter,.fa-hotel,.fa-cc-visa,.fa-champagne-glasses,.fa-bus,.fa-ship{
+        font-size: 40px;
+    }
+    .logo{
+        height: 57px;
+        width: 119px;
+    }
+    .bigfinalflex{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .destlocation{
+        height:150px;
+        width: 150px;
+       
+    }
+}
+@media (min-width: 280px) and (max-width: 320px){
+    .logo{
+        height: 40px;
+        width: 89px;
+    }
+    .righticons{
+        font-size: 10.5px;
+        font-weight: bold;
+        margin-left: 20px;
+        border-right: 2px solid black;
+    }
+    .fa-jet-fighter,.fa-hotel,.fa-cc-visa,.fa-champagne-glasses,.fa-bus,.fa-ship{
+        font-size: 30px;
+    }
+#bookheadline{
+    font-size: 15px;
+}
+.bigfinalflex{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+#search{
+    margin-top: 10px;
+    height: 30px;
+    width:56px  ;
+    font-size:13px;
+}
+
+}
+@media (min-width: 320px) and (max-width: 575px) { 
+    .destlocation{
+    margin-left: 100px;
+    height: 150px;
+    width: 150px;}
+}
